@@ -1,0 +1,22 @@
+{
+  "name": "vue-ajax-form-component",
+  "version": "1.0.0",
+  "description": "A component for creating simple AJAX forms.",
+  "homepage": "http://ohdoylerules.com",
+  "repository": "https://github.com/james2doyle/vue-ajax-form-component",
+  "main": "vue.ajax-form.js",
+  "author": {
+    "name": "James Doyle",
+    "email": "james2doyle@gmail.com",
+    "url": "http://ohdoylerules.com/"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  }],
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-livereload": "^3.8.1"
+  }
+}
