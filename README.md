@@ -34,7 +34,7 @@ You can see a custom attribute called `v-response-type`. This allows you to set 
 
 But, sometimes maybe you are expecting back some HTML or some raw text. In those cases, you can use `v-response-type="html"` or `v-response-type="text"`, respectively. Then you could maybe dump the results in your view in some area. A use case for this might be for "session" flashes like success or error alerts, or maybe a preview of a blog post.
 
-You can see a `Vue` instance in `js/main.js` if you want more details.
+You can see a `Vue` instance example in [example.html](https://github.com/james2doyle/vue-ajax-form-component/blob/master/example.html) if you want more details.
 
 ### Support
 
