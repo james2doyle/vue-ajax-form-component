@@ -2,7 +2,33 @@
 
 var AjaxFormComponent = Vue.extend({
   template: '<form id="{{ id }}" class="{{ class }}" name="{{ name }}" action="{{ action }}" method="{{ method }}" v-on:submit.prevent="handleAjaxFormSubmit"><slot></slot></form>',
-  props: ['id', 'name', 'class', 'action', 'method', 'v-response-type'],
+  props: {
+    'id': String,
+    'class': String,
+    'action': {
+      type: String,
+      required: true
+    },
+    'method': {
+      type: String,
+      required: true,
+      validator: function(value){
+        switch(value.toUpperCase()){
+          case 'CONNECT': return true
+          case 'DELETE': return true
+          case 'GET': return true
+          case 'HEAD': return true
+          case 'OPTIONS': return true
+          case 'POST': return true
+          case 'PUT': return true
+          case 'TRACE': return true
+          case 'TRACK': return true
+          default: return false
+        }
+      }
+    },
+    'v-response-type': String
+  },
   methods: {
     handleAjaxFormSubmit: function() {
       // fires before we do anything
